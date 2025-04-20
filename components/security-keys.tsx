@@ -1,6 +1,5 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import Image from "next/image"
 import { Shield, Smartphone, Server, Download, RefreshCw, Info } from "lucide-react"
 
 export function SecurityKeys() {
@@ -43,14 +42,8 @@ export function SecurityKeys() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="flex flex-col items-center py-6">
-                  <div className="w-32 h-32 relative mb-4">
-                    <Image
-                      src="/images/hardware-key.png"
-                      alt="Hardware Key"
-                      width={128}
-                      height={128}
-                      className="object-contain"
-                    />
+                  <div className="w-32 h-32 flex items-center justify-center bg-zinc-900 rounded-xl border border-zinc-700 mb-4">
+                    <Shield className="h-16 w-16 text-amber-500" />
                   </div>
                   <div className="text-sm text-center text-zinc-400">Stored on your physical device</div>
                 </CardContent>
